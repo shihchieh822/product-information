@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>product-information</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/main.css">
+     
+     <script src="js/jquery-3.4.1.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/all.js"></script>
+
+
+</head>
+<body>
+    <div id="app">
+        <div class="product-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="product">
+                        <img src="jpg/apple.png"
+                             alt="photo">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="info text-center">
+                        <div class="pre-order">
+                        <span>預售數量:</span>
+                        <input type="number" class="pre-qty text-center" value="10" min="0" max="10"
+                            readonly="readonly" />
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item timer">倒數計時:<span>60</span>秒</li>
+                            <li class="list-group-item">富士山蘋果</li>
+                            <li class="list-group-item ">剩餘數量:<input type="number" class="remainder text-center" value="10"
+                                   min="0" max="10" readonly="readonly" /> </li>
+                            <li class="list-group-item">
+                                <div class="Trading">
+                                    <button type="button" class="btn btn-primary btn-lg buy" data-toggle="modal" data-target="#apple">購買</button>
+                                    <button type="button" class="btn btn-primary btn-lg pre-sale" data-toggle="modal"
+                                        data-target="#sale-pre">預售</button>
+                                    <button type="button" class="btn btn-primary btn-lg sold-out" >停售</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!--info-->
+                </div>
+            </div><!--row-->
+        </div><!--container-->
+        </div><!--content-->
+
+        <!--商品購買-->
+        <div class="modal fade" id="apple" tabindex="-1" role="dialog" aria-labelledby="apple"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h4 class="modal-title" id="apple">我要購買</h4>
+                        <div class="intro mt-5">
+                        <input type="button" value="-" id="del" class="dec" />
+                         <input type="number" class="quantity text-center" value="1" min="0" max="10" readonly="readonly">
+                         <span>箱</span>
+                        <input type="button" value="+" id="add"  class="inc" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-lg buy-check">確定</button>
+                    </div>
+                </div><!--modal-header-->
+            </div>
+        </div><!--modal-->
+
+        <!--商品預購-->
+<div class="modal fade" id="sale-pre" tabindex="-1" role="dialog" aria-labelledby="sale-pre" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <h4 class="modal-title" id="sale-pre">我要預購</h4>
+                <div class="intro mt-5">
+                    <input type="button" value="-" id="pre-del" class="pre-dec" />
+                    <input type="number" class="pre-quantity text-center" value="1" min="0" max="10" readonly="readonly">
+                    <span>箱</span>
+                    <input type="button" value="+" id="pre-add" class="pre-inc" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg pre-check">確定</button>
+            </div>
+        </div>
+        <!--modal-header-->
+    </div>
+</div>
+<!--modal-->
+
+
+
+    </div>
+    
+    
+</body>
+</html>

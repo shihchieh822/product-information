@@ -1,0 +1,110 @@
+*{
+    font-family: 'Noto Sans TC',sans-serif;
+}
+.btn {
+     background-color: #fff;
+     color: black;
+}
+
+#app {
+    padding: 100px 0px;
+    background: #ccc;
+}
+
+.row {
+    padding: 50px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #4ae965;
+}
+
+.product {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.pre-order {
+    margin-top: 15px;
+    display: none;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pre-qty {
+    width: 30%;
+    border: none;
+    background-color: #4ae965;
+
+}
+
+li {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.remainder {
+    width: 20%;
+    border:none;
+
+}
+
+.btn, img {
+    width: 100%;
+    border-color:white ;
+}
+
+.Trading .btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: black;
+}
+
+.Trading .sold-out, .pre-sale {
+    display: none;
+}
+
+/*Modal*/
+.modal-header {
+    border-bottom: none;
+}
+
+/*modal-body*/
+
+.dec, .inc {
+    padding: 5px 10px;
+    border:1px solid #ccc;
+    background-color: white;
+
+    
+}
+
+.intro .quantity {
+        width: 10%;
+        border: none;
+        text-align: center;
+        font-size: 20px;
+}
+.intro span {
+    font-size: 20px;
+}
+
+
+
+/*modal-footer*/
+
+.modal-footer {
+    margin-top: 20px;
+    border-top:none;
+}
+
+.modal-footer .btn {
+    letter-spacing: 5px;
+    border-color: #ccc;
+    margin: 0 auto;
+    width:35%;
+}
+.modal-footer .btn:hover {
+    background-color: #ccc;
+}
